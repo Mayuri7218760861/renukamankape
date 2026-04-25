@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+        content="Width=device-width,initial-scale=1.0">
+        <title>Birds</title>
+        </body>
+        <style>
+            body{
+                margin: 0;
+                font-family: Arial;
+                background: #f5f7fa;
+            }
+            nav{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 25px;
+                background: #2f6f6f;
+                color: white;
+            }
+            img{
+                width: 350px;
+                height: 250;
+                border-radius: 15px;
+            }
+            body{
+                background: #7c89ac;
+            }
+            body{
+                margin: 0;
+                font-family: Arial;
+                background: #f5f5f5;
+            }
+        .menu-icon{
+            display: none;
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+        } 
+        @media (max-width: 768px) {
+            .menu-icon{
+                display: none;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #0d5c46;
+                position: absolute;
+                top:60;
+                right: 0;
+                width: 200px;
+                text-align: center;
+            }
+            .nav-links li {
+                padding: 10px;
+            }
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #0d5c46;
+           padding: 10px 40px;
+        } 
+        nav h1 {
+            color: #bda642;
+        }
+        .logo{
+            font-size: 22px;
+            font-weight: bold;
+            height: 50px;
+        } 
+            body{
+                margin:0;
+                padding: 0;
+                font-family: Arial,sans-serif;
+                background-color: #f4f4f4;
+            }
+            .logo img{
+                 width: 60px;
+                 height: 48px;
+            }
+            nav h1{
+                color:#f5d76e;
+                margin: 0;
+                font-size: 28px;
+            }
+            nav ul{
+                list-style:none;
+                display: flex;
+                gap: 30px;
+                margin: 0;
+                background-color: #2a6f97;
+            }
+            nav ul li{
+                display: inline;
+                list-style: none;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color:aquamarine;
+                font-size: bold;
+                transition: 0.3s;
+                position: relative;
+                padding: 5px 0;
+            }
+            nav ul li a::after {
+                content: "";
+                position: absolute;
+                width: 0%;
+                height: 2px;
+                background: gold;
+                left:0;
+                bottom:-3px;
+                transition: 0.3s;
+            }
+            nav ul li a:hover::after {
+                width:100%;
+                color:#f5d76e;
+            }
+            header{
+                background-color: black; 
+                height:300px;
+                position: relative;
+                color:white;
+                text-align:center;
+                padding:20px;
+                font-weight: bold;
+            }
+            .home{
+                text-align: center;
+                padding: 30px;
+            }
+            .gallery{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                display: flex;
+                justify-items: center;
+                gap: 30px;
+                flex-wrap: wrap;
+                margin-top: 40px;
+            }
+            .card{
+                width: 350px;
+                margin: auto;
+                overflow: hidden;
+                border-radius: 15px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            }
+            .card img{
+                width: 100%;
+                height:350;
+                object-fit: cover;
+                display: block;
+            }
+            nav{
+                display: flex;
+                align-items: center;
+                background-color: linear-gradient(to right,#0f2027, #2c5364);
+                justify-content: space-between;
+                padding: 15px;
+                 }
+                 .logo-nav {
+                    display: flex;
+                   align-items: center;
+                   gap:40px
+                   color: blue;
+                 }
+            .overlay{
+                background: rgba(196, 175, 175, 0.6);
+                height:100%;
+                text-align: center;
+                padding-top:80px;
+            }
+            h1{
+                text-align: center;
+                font-size: 32px;
+                margin-top: 20px;
+            }
+
+            .contact{
+                width: 350px;
+                margin: 40px auto;
+                background:#3e5f73;
+                color:White;
+                padding:20px;
+                border-radius: 15px;
+                text-align: center;
+                margin-left: auto;
+                margin-right: 50px;
+               width: 400;
+               box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+             }
+             .contact textarea{
+                width:350px;
+                padding:10px;
+                margin:8px 0;
+                border:none;
+             }
+             .contact button{
+                padding: 20px;
+                border: none;
+                background: black;
+                color: white;
+                cursor:pointer;
+             }
+            footer {
+                background: palegreen
+                color:white;
+                text-align: center;
+                padding: 15px;
+                margin-top: 30px;
+            }
+            .logo{
+                font-size: 50;
+                height:"200px";
+                width:"200px";
+            }
+            body{
+                margin: 0;
+                font-family: Arial;
+                background: #d3c3d8;
+                text-align: center;
+            }
+            .home-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 40px;
+            }
+            .logo-title{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .gallery img{
+                width:350;
+                height: 250px;
+                object-fit: cover;
+                margin-bottom:20px;
+                border-radius: 15px;
+                box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+                transition: 0.3s;
+            }
+            .gallery img:hover{
+                transform: scale(1.05);
+            }
+            }
+
+                 
+        </style>
+           </head>
+    <body>
+        
+            <nav>
+                <div class="logo"> <img src="https://wallpapers.com/images/hd/abstract-bird-logo-design-98wco7xo4ouxaon6-2.png"alt=""></div>
+        <div class="collapse navbar-collapse"id="mynavbar">
+                <ul class="nav navbar-nav">
+                    <h1>Birds Gallery</h1>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact us.html">Contact Us</a></li>
+                </ul>
+                <div class="menu-icon"
+                onclick="toggleMenu()">
+            
+            </div>
+            </nav>
+          <div class="slide">
+            </div>
+
+        </div>
+    </div>
+        
+        </header>
+        <section class="home">
+            <h1>Welcome to Bird Website</h1>
+        </section>
+        <div class="gallery">
+        <div class="card">
+            <img src="Image.jpg" alt="height="1000px" width="500px">
+           </div>
+
+           <div class="card">
+            <img src="Birds.jpg" alt="height="500px" width="500px">
+            </div>
+            <div class="card">
+            <img src="https://media.istockphoto.com/id/656518784/photo/young-woman-in-a-white-coat-feeds-the-gulls-on-the-beach.jpg?s=612x612&w=is&k=20&c=aNcN0ZrjLvrM1wj_b0Bey96BHoyVwOVdVYKyrBMPKYg=" alt="height="500px" width="500px">
+            </div>
+            <div class="card">
+            <img src="https://media.istockphoto.com/id/1144382742/photo/a-girl-stands-on-the-beach-and-seagulls-are-flying-nearby-sunny-day-on-sea-beach-enjoy-the.jpg?s=612x612&w=0&k=20&c=0AnRuorAJI5t8QmsQ_OraPPqNpPxcHQJmUE0L4lm9Wc=" alt="height="500px" width="500px">
+           </div>
+           <div class="card">
+            <img src="Beach.jpg"alt="height="500px" width="500px">
+            </div>
+            <div class="card">
+            <img src="sky (2).jpg" alt="height="500px" width="500px">       
+            </div>
+        <footer>
+        </footer>
+        <p id="browser"></p>
+
+        <script>
+            let browsername = navigator.userAgent;
+            document.getElementById("browser").innerHTML
+            L=browsername;
+            </script>
+
+            <script>
+                if (navigator.userAgent.includes("chrome"))
+            {
+                document.write("you are using Google chrome");
+            }
+            else if
+            (navigator.userAgent.includes("Firefox")) {
+                document.write("you are using Mozilla firefox");
+            }
+            else {
+                document.write("browser not detected");
+            }
+
+            function toggleMenu(){
+                let menu =
+                document.querySelector(".nav-links");
+                if(menu.style.display ==="flex") {
+                    menu.style.display = "flex";
+                }
+            }
+            }
+            function join() {
+                alert("Thanks for Joining Bird Count India!");
+            }
+        </script>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-box">
+                <p><strong>Adress:</strong> Shree Ram Nagar,Farola Tanda,Bidkin</p>
+                <p><strong>Phone:</strong> +91 721870861</p>
+                <p><strong>Email:</strong>Renuka@gmail.com</p>
+            </div>
+            </section>
+               
