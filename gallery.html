@@ -6,9 +6,13 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title> Bird Gallery</title>
 <style>
+    .gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 body{
     font-family:Arial;
-    background:#f2f2f2;
     text-align:center;
     background-color: aquamarine;
 }
@@ -27,10 +31,20 @@ h1{
     object-fit:cover;
     border-radius:10px;
 }
+.gallery > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery {
+    max-width: 800px;
+    margin: auto;
+}
 body{
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    background: rgb(189, 215, 206);
+    text-align: center;
 }
 .title {
     text-align: center;
@@ -38,7 +52,7 @@ body{
     color: #2e4d3d;
 }
 .gallery {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
@@ -56,48 +70,77 @@ body{
     transform: scale(1.05);
 }
 .card img {
-    width: 100px;
-    height: 200px;
+    width: 800px;
+    height: 400px;
     object-fit: cover;
 }
 .card h3 {
     text-align: center;
-    padding: 10px;
+    padding: 100px;
 }
 </style>
 </head>
 <body>
-    <h1 class="="title">Birds Gallery</h1>
+    <h1 class="="title">Explore All About Birds Species</h1>
 
     <div class="gallery">
         <div class="card">
-    <img src="https://thumbs.dreamstime.com/b/funny-birds-birds-chicks-sit-branches-apple-tree-pink-flowers-sunny-spring-garden-little-funny-birds-213269102.jpg"alt="Bird 1"><br><br>
-    <h3>Sparrow</h3>
+    <img src="sparrow.jpg"Bird 1"><br><br>
+    <h2>Sparrow</h2>
     </div>
 
     <div class="card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPSefyiBNaaN4zgRCgbkQedPTJGFb1pISVTuHUhUsMhakpugPlMtYmjLk&s" alt="Bird 3"><br><br>
-    <h3>Parrot</h3>
+    <img src="img4.jpg"Bird 2"><br><br>
+    <h2>Sarus Crane</h2>
     </div>
 
     <div class="card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB-NgCHatyfnR8oa0125eIYyYP0mTyi6B-PJh_Bp-PLPPI6C-JFkKur9I&s"alt="Bird 4"><br><br>
-    <h3>Kingfisher</h3>
+    <img src="img2.jpg"alt="Bird 3"><br><br>
+    <h2>Kingfisher</h2>
+    </div>
+
+     <div class="card">
+    <img src="img1.jpg"alt=Bird 4"><br><br>
+    <h2>Parrot</h2>
     </div>
 
     <div class="card">
-    <img src="data:image/jpeg;base64,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"alt="Bird 5"><br>
-    <h3>Owl</h3>
+    <img src="img3.jpg"alt=Bird 5"><br><br>
+    <h2>Swan</h2>
     </div>
 
     <div class="card">
-    <img src="https://media.istockphoto.com/id/1416625262/photo/little-girl-running-towards-a-flock-of-pigeons-in-the-park.jpg?s=612x612&w=0&k=20&c=p0FGg-yo1RC6RsnJn1ixqJuSr_LqZogOVbldQsebIyM="alt="Bird 6"><br><br>
-    <h3>Group of Birds</h3>
+    <img src="https://media.istockphoto.com/id/1416625262/photo/little-girl-running-towards-a-flock-of-pigeons-in-the-park.jpg?s=612x612&w=0&k=20&c=p0FGg-yo1RC6RsnJn1ixqJuSr_LqZogOVbldQsebIyM="alt=Bird 6"><br><br>
+    <h2>Flock of Birds</h2>
     </div>
 
     <div class="card">
-    <img src="https://images.stockcake.com/public/9/5/2/9521c5a2-78dc-4aa0-9b2d-111863c57be3_large/birds-at-sunrise-stockcake.jpg"alt="Austria" height="400" width="400" class="img-thumbnail"> <br> <br>
-    <h3>Nest Life</h3>
+    <img src="https://images.stockcake.com/public/9/5/2/9521c5a2-78dc-4aa0-9b2d-111863c57be3_large/birds-at-sunrise-stockcake.jpg"alt=Bird 7"><br> <br>
+    <h2>Warm Nest Moments</h2>
     </div>
+
+    <div class="card">
+    <img src="sky (2).jpg"alt=Bird 8"><br><br>
+    <h2>seagull</h2>
+</div>
+ <div class="card">
+    <img src="img5.jpg"alt=Bird 9"> <br> <br>
+    <h2>Flamingo</h2>
+</div>
+
+<div class="card">
+    <img src="img6.jpg" alt=Bird 10"><br> <br>
+    <h2>Eagle</h2>
+    </div>
+
+    <div class="card">
+    <img src="img7.jpg" alt=Bird 11"><br> <br>
+    <h2>Peacock</h2>
+</div>
+
+<div class="card">
+    <img src="img8.jpg" alt=Bird 11"><br> <br>
+    <h2>Shelduck</h2>
+</div>
     </body>
 </html>
